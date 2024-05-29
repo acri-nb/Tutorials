@@ -11,8 +11,6 @@ Our goal is to simplify the understanding and execution of common technical task
 1. [Introduction](#introduction)
 2. [List of Tutorials](#list-of-tutorials)
 3. [How to Contribute](#how-to-contribute)
-4. [Support and Assistance](#support-and-assistance)
-5. [License](#license)
 
 ## Introduction
 
