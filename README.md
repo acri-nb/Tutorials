@@ -8,13 +8,9 @@ Our goal is to simplify the understanding and execution of common technical task
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [List of Tutorials](#list-of-tutorials)
-3. [How to Contribute](#how-to-contribute)
+1. [List of Tutorials](#list-of-tutorials)
+2. [How to Contribute](#how-to-contribute)
 
-## Introduction
-
-Each tutorial in this repository is designed to be clear and easy to follow. We use simple language and illustrations where necessary to make the instructions as understandable as possible.
 
 ## List of Tutorials
 
