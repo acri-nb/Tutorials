@@ -18,6 +18,7 @@ Our goal is to simplify the understanding and execution of common technical task
 
 - [Transferring Data from an LTS Server to AWS S3](./Transfert_data_LTS_to_AWS_s3.md)
 - [Create Credentials from AWS](./get_aws_credentials.md)
+- [How to use Linux OS in command Line ?](./how_to_use_Linux_cmd.md)
 
 
 ## How to Contribute
