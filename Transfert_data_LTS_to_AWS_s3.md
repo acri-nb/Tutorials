@@ -87,4 +87,5 @@ Log in to your AWS console, navigate to your **acri243data** S3 bucket, and chec
 * **Data Encryption:** Consider encrypting your data at rest on the LTS server and in transit during the transfer process.
 * **Access Control:** Implement appropriate access control mechanisms on your AWS S3 bucket to restrict data access. 
 
-This document provides a comprehensive guide to transferring data from your LTS server to AWS S3 using a compute server as an intermediary. 
+**Author** 
+[hadrien gayap](https://github.com/gth-ai)
