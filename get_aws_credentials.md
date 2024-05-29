@@ -16,19 +16,19 @@ Follow these steps to configure the AWS CLI with your AWS access key ID and secr
 3. **Configure AWS CLI**:
    Open your terminal (or command prompt) and run the following command:
 
-   \`\`\`bash
+   ```bash
    aws configure
-   \`\`\`
+   ```
 
-4. **Enter Your Access Credentials**:
+5. **Enter Your Access Credentials**:
    You will be prompted to enter your credentials. Provide the following information:
 
-   \`\`\`plaintext
+   ```plaintext
    AWS Access Key ID [None]: YOUR_ACCESS_KEY_ID
    AWS Secret Access Key [None]: YOUR_SECRET_ACCESS_KEY
    Default region name [None]: YOUR_PREFERRED_REGION (e.g., us-east-1)
    Default output format [None]: json (or text or table)
-   \`\`\`
+   ```
 
    - **AWS Access Key ID**: Enter your access key ID.
    - **AWS Secret Access Key**: Enter your secret access key.
@@ -39,20 +39,20 @@ Follow these steps to configure the AWS CLI with your AWS access key ID and secr
 
 Assuming your Access Key ID is \`AKIAIOSFODNN7EXAMPLE\` and your Secret Access Key is \`wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\`, and you want to set the default region to \`us-west-2\` with JSON output format. Here is what you would enter:
 
-\`\`\`plaintext
+```plaintext
 $ aws configure
 AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
 AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 Default region name [None]: us-west-2
 Default output format [None]: json
-\`\`\`
+```
 
 ## Verifying the Configuration
 
 To verify that the configuration is correct, you can run a simple command such as \`aws s3 ls\` to list the S3 buckets in your account. If the command returns a list of buckets or a message indicating there are no buckets, the configuration is correct.
 
-\`\`\`bash
+```bash
 aws s3 ls
-\`\`\`
+```
 
-By following these steps, you will have configured the AWS CLI with your access credentials and be ready to interact with AWS services via the command line.
+**Author** [@username](https://github.com/gth-ai)
