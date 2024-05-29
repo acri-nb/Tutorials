@@ -1,4 +1,4 @@
-## Transferring Data from LTS Server to AWS S3 via Compute Server
+# Transferring Data from LTS Server to AWS S3 via Compute Server
 
 This guide outlines the process of transferring data from an LTS server to the **acri243data** AWS S3 bucket using a **compute server** as an intermediary. This is necessary when the LTS server only holds data and lacks the required packages for direct S3 transfer.
 
@@ -8,9 +8,9 @@ This guide outlines the process of transferring data from an LTS server to the *
 * You have SSH access to both the compute server (10.111.243.103) and the LTS server (10.111.243.104).
 * The compute server has the necessary packages installed: `sshfs`, `awscli`.
 
-### Steps:
+## Steps:
 
-#### 1. Connect to the Compute Server:
+### 1. Connect to the Compute Server:
 
 Open your terminal and SSH into the compute server:
 
@@ -18,7 +18,7 @@ Open your terminal and SSH into the compute server:
 ssh <user>@10.111.243.103
 ```
 
-#### 2. Install Necessary Packages (if not already installed):
+### 2. Install Necessary Packages (if not already installed):
 
 Install `sshfs` and `awscli` if they are not already installed on the compute server.
 
@@ -29,7 +29,7 @@ sudo apt install sshfs awscli -y
 
 > **Note :** The previous packages are already installed in the compute server (10.111.243.103), but it's important to keep in mind that you'll need them if you want to use them on other calculation servers at the institute.
 
-#### 3. Configure AWS Credentials:
+### 3. Configure AWS Credentials:
 
 Configure the AWS CLI with your AWS access key ID and secret access key. You can find these credentials in your AWS console.
 
@@ -37,7 +37,7 @@ Configure the AWS CLI with your AWS access key ID and secret access key. You can
 aws configure
 ```
 
-#### 4. Mount LTS Server Filesystem:
+### 4. Mount LTS Server Filesystem:
 
 Create a directory on the compute server to serve as the mount point for the LTS server's filesystem:
 
@@ -53,7 +53,7 @@ sshfs <user>@10.111.243.104:/mnt/gth/ACRI /mnt/lts-server
 
 **Please note:** Replace `<user>` with your username on the LTS server.
 
-#### 5. Transfer Data to AWS S3:
+### 5. Transfer Data to AWS S3:
 
 Use the `aws s3 cp` command to transfer the data from the mounted directory to your S3 bucket:
 
@@ -63,7 +63,7 @@ aws s3 cp /mnt/lts-server/ s3://acri243data --recursive
 
 This command will recursively copy all files and subfolders within the `/mnt/gth/ACRI` directory on the LTS server to the root of the **acri243data** S3 bucket.
 
-#### 6. Unmount LTS Server Filesystem:
+### 6. Unmount LTS Server Filesystem:
 
 Once the transfer is complete, unmount the LTS server's filesystem:
 
@@ -71,7 +71,7 @@ Once the transfer is complete, unmount the LTS server's filesystem:
 sudo umount /mnt/lts-server
 ```
 
-#### 7. Verify Data Transfer:
+### 7. Verify Data Transfer:
 
 Log in to your AWS console, navigate to your **acri243data** S3 bucket, and check if the data has been transferred successfully.
 
