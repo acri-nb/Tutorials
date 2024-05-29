@@ -30,7 +30,6 @@ We encourage contributions from all institute members to improve and expand thes
 4. **Push your changes** to GitHub: `git push origin add-new-tutorial`.
 5. **Create a Pull Request** so we can review your changes.
 
-For more detailed instructions, please refer to our [Contributing Guide](./CONTRIBUTING.md).
 
 ## Support and Assistance
 
