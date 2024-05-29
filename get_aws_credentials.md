@@ -55,4 +55,5 @@ To verify that the configuration is correct, you can run a simple command such a
 aws s3 ls
 ```
 
-**Author** [@hadrien gayap](https://github.com/gth-ai)
+**Author** 
+[@hadrien gayap](https://github.com/gth-ai)
