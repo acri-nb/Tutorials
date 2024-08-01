@@ -67,9 +67,7 @@ Retry the update:
 
 ## MySQL APT Configuration
 
-During the MySQL APT configuration step, you will see a prompt like this:
-
-![MySQL APT Config](path/to/your/image.png)
+During the MySQL APT configuration step, you will see a prompt.
 
 ### Recommended Configuration:
 
@@ -104,3 +102,41 @@ deb http://mirror.math.princeton.edu/pub/ubuntu/ focal-security main restricted
 deb http://mirror.math.princeton.edu/pub/ubuntu/ focal-security universe
 deb http://mirror.math.princeton.edu/pub/ubuntu/ focal-security multiverse
 ```
+### Steps to Configure the Alternative Repository
+
+1. **Backup Your Current Sources List**
+
+   Before making any changes, it's a good practice to backup your current sources list:
+   ```sh
+   sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
+   ```
+
+2. **Edit the Sources List**
+
+   Open the sources list file in a text editor of your choice:
+   ```sh
+   sudo nano /etc/apt/sources.list
+   ```
+
+3. **Add the Alternative Repository**
+
+   Replace the existing repository URLs with the following alternative repository URLs.
+
+4. **Save and Close the Sources List**
+
+   Save the changes and close the text editor (in nano, you can do this by pressing `CTRL+X`, then `Y`, and `Enter`).
+
+5. **Update the Package List**
+
+   Update your package list to apply the new repository configuration:
+   ```sh
+   sudo apt update
+   ```
+
+6. **Upgrade Your System**
+
+   Proceed with upgrading your system using the new repository:
+   ```sh
+   sudo apt upgrade
+   sudo apt dist-upgrade
+   ```
